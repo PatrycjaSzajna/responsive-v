@@ -1,0 +1,28 @@
+* {
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family : "Open Sans", sans-serif;
+    background-color: $primary-background-color;
+    color: $primary-text-color
+}
+
+a {
+    color: $primary-text-color;
+    text-decoration: none;
+}
+
+.container {
+    width: 100%;
+    max-width: 990px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 15px;
+}

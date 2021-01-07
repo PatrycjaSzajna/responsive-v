@@ -1,0 +1,41 @@
+
+.random-stuff-whole-container {
+    background-color: $primary-background-color;
+    padding-top: 18px;
+    padding-left: 32px;
+
+
+    .random-stuff-container {
+        background-color: $primary-background-color;
+    }
+    
+
+    .random-stuff-text {
+        color: black;
+        font-size: 25px;
+        margin-bottom: 14px;
+    }
+
+    ul li {
+        margin-bottom: 10px;
+        font-size: 1.3rem;
+
+        &:last-child {
+        padding-bottom: 30px;
+        }
+    }
+
+    ul li a {
+        text-decoration: underline;
+    }
+
+  
+    .random-stuff-text-2{
+        color: black;
+        font-size: 25px;
+        margin-bottom: 14px;
+        margin-top: 14px;
+    }
+}
+
+

@@ -1,0 +1,44 @@
+.btn {
+  display: block;
+  text-align: center;
+  padding: 10px;
+  border-radius: 5px;
+  margin: 5px 0;
+  font-weight: 700;
+  font-size: 1.6rem;
+
+  @include tablet {
+    font-size: 2rem;
+    display: flex;
+    flex-direction: row-reverse; //odwracanie tekstu z ikonka//
+    justify-content: space-between;
+    text-align: unset;
+    margin: 10px 0;
+    padding-left: 1.5rem;
+  }
+
+  &--primary {
+    background-color: $primary-color;
+    color: #fff;
+  }
+
+  &--secondary {
+    background-color: $primary-background-color;
+  }
+}
+
+.button_blue {
+  a.btn_blue {
+    background-color: $primary-color;
+    padding: 20px;
+    color: white;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    margin-bottom: 48px;
+  }
+  i.fas.fa-arrow-circle-right {
+    margin-right: 14px;
+  }
+}

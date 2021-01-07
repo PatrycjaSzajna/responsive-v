@@ -1,0 +1,92 @@
+.header {
+  &__wrapper {
+    margin: 15px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    @include tablet {
+      justify-content: space-between;
+      flex-direction: row;
+      margin-bottom: 30px;
+    }
+    .logo {
+      background-color: $accent-color;
+      color: #fff;
+      padding: 6px;
+      border-radius: 8px;
+      font-size: 2rem;
+      font-weight: 800;
+      @include tablet {
+        font-size: 3.5rem;
+      }
+    }
+  }
+  &__menu {
+    &-toggle {
+      text-decoration: none;
+      color: #fff;
+      display: inline-block;
+      padding: 4px 8px;
+      background-color: lightgray;
+      border-radius: 4px;
+      position: absolute;
+      top: 5px;
+      left: 5px;
+      @include tablet {
+        display: none;
+      }
+    }
+    &-btn {
+      display: none;
+      opacity: 0;
+      position: absolute;
+      top: -9999px;
+      left: -9999px;
+      &:checked {
+        ~ .header__navigation {
+          display: block;
+        }
+      }
+    }
+  }
+  &__navigation {
+    display: none;
+    width: 100%;
+    @include tablet {
+      display: unset;
+      width: auto;
+    }
+  }
+  &__list {
+    margin: 15px 0;
+    border-radius: 4px;
+    @include tablet {
+      display: flex;
+      li {
+        margin: 0 8px;
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+  &__links {
+    display: block;
+    padding: 16px 12px;
+    font-size: 1.4rem;
+    background-color: #fff;
+    border-bottom: 1px solid #e8e8e8;
+    @include tablet {
+      font-weight: 700;
+      border: none;
+      padding: 5px 8px;
+      background-color: unset;
+    }
+    &.active {
+      color: #fff;
+      background-color: $primary-text-color;
+      border-radius: 5px;
+    }
+  }
+}
