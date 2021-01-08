@@ -365,8 +365,9 @@ a {
 }
 .random-stuff-whole-container .random-stuff-text {
   color: black;
-  font-size: 25px;
+  font-size: 35px;
   margin-bottom: 14px;
+  font-weight: bold;
 }
 .random-stuff-whole-container ul li {
   margin-bottom: 10px;
@@ -377,11 +378,5 @@ a {
 }
 .random-stuff-whole-container ul li a {
   text-decoration: underline;
-}
-.random-stuff-whole-container .random-stuff-text-2 {
-  color: black;
-  font-size: 25px;
-  margin-bottom: 14px;
-  margin-top: 14px;
 }
 /*# sourceMappingURL=main.css.map */
